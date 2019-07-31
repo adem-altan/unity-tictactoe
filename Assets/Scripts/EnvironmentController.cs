@@ -22,6 +22,11 @@
 
         public GameObject fireworks;
 
+        private Vector3 _position;
+        private Quaternion _rotation;
+        private Trackable _hit;
+        private Pose _pose;
+
         void Start()
         {
             createNewGameButton = GameObject.FindGameObjectWithTag("GameEnabler").GetComponent<Button>();
@@ -36,9 +41,13 @@
         void Update()
         {
             fireworks.SetActive(controller.winner);
-            indicator.SetActive(false);
-            colour.normalColor = Color.grey;
-            createNewGameButton.colors = colour;
+            if (!controller.isGameStarted)
+            {
+                indicator.SetActive(false);
+                colour.normalColor = Color.grey;
+                createNewGameButton.colors = colour;
+            }
+            
             
             if (controller.isGameStarted)
             {
@@ -52,7 +61,7 @@
             TrackableHitFlags raycastFilter = TrackableHitFlags.PlaneWithinPolygon |
                 TrackableHitFlags.FeaturePointWithSurfaceNormal;
 
-            if (Frame.Raycast(transform.position.x, transform.position.y, raycastFilter, out hit))
+            if (Frame.Raycast(transform.position.x, transform.position.y, raycastFilter, out hit) && !controller.isGameStarted)
             {
                 
                 if (hit.Trackable is FeaturePoint)
@@ -73,16 +82,30 @@
                     //Horizontal Plane
                     else
                     {
-                        anchor = hit.Trackable.CreateAnchor(hit.Pose);
-   
                         UpdateObjectPosition(hit.Pose.position, hit.Pose.rotation);
                         colour.normalColor = Color.red;
                         createNewGameButton.colors = colour;
-                        indicator.transform.SetParent(anchor.transform);
-                        
+
+                        _hit = hit.Trackable;
+                        _pose = hit.Pose;
+                        _position = hit.Pose.position;
+                        _rotation = hit.Pose.rotation;
                     }
                 }
             }
+        }
+
+        public void CreateAnchor()
+        {
+            controller.isGameStarted = true;
+            anchor = _hit.CreateAnchor(_pose);
+
+            fireworks.transform.position = _position;
+            fireworks.transform.rotation = _rotation;
+            indicator.transform.SetParent(anchor.transform);
+            indicator.SetActive(true);
+
+            createNewGameButton.enabled = false;
         }
 
         private void UpdateObjectPosition(Vector3 position, Quaternion rotation)
@@ -90,8 +113,7 @@
             indicator.SetActive(true);
             indicator.transform.position = position;
             indicator.transform.rotation = rotation;
-            fireworks.transform.position = position;
-            fireworks.transform.rotation = rotation;
+            
         }
     }
 }

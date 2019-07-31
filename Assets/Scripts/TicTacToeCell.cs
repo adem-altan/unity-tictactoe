@@ -17,10 +17,11 @@ namespace GoogleARCore
         public void OnClick()
         {
             //if (value != TicTacToeValue.Empty) { return; }
-               
+
             //value = controller.currentTurn;
 
             //emptyDisplay.SetActive(value == TicTacToeValue.Empty);
+            if (controller.winner) return;
             
             if (!controller.nextPlayer)
             {
@@ -37,26 +38,6 @@ namespace GoogleARCore
                 controller.NotifyCellChange(str);
 
             }
-
-        
-
-
-            //if (controller.nextPlayer)
-            //{
-            //    emptyDisplay.SetActive(false);
-            //    naughtDisplay.SetActive(true);
-            //    //controller.nextPlayer = !controller.nextPlayer;
-            //    var str = naughtDisplay.tag;
-            //    controller.NotifyCellChange(str);
-            //} else
-            //{
-            //    emptyDisplay.SetActive(false);
-            //    crossDisplay.SetActive(true);
-            //    //controller.nextPlayer = !controller.nextPlayer;
-            //    var str = naughtDisplay.tag;
-            //    controller.NotifyCellChange(str);
-            //}
-
         }
     }
 }

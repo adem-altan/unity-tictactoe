@@ -18,7 +18,11 @@ public class GameEngine : MonoBehaviour
 
     internal void NotifyCellChange(string str)
     {
-        
+        if (winner)
+        {
+            return;
+        }
+
         isGameStarted = true;
         if (moveCounter == 9)
         {
@@ -37,7 +41,6 @@ public class GameEngine : MonoBehaviour
             {
                 winner = true;
                 Debug.Log("Readifarian Wins");
-                ResetGame();
             }
         }
         //second player
@@ -49,7 +52,6 @@ public class GameEngine : MonoBehaviour
             {
                 winner = true;
                 Debug.Log("Kloudie Wins");
-                ResetGame();
             }
         }
         moveCounter++;
