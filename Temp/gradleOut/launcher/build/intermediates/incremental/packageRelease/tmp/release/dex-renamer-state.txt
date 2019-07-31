@@ -1,4 +1,4 @@
-#Wed Jul 24 16:23:15 AEST 2019
+#Wed Jul 31 14:52:26 AEST 2019
 base.0=/Users/ata/Projects/unity/unity-tictactoe-master/Temp/gradleOut/launcher/build/intermediates/transforms/dexMerger/release/0
 path.0=classes.dex
 renamed.0=classes.dex

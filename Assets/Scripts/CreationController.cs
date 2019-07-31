@@ -22,7 +22,7 @@ namespace GoogleARCore
 
         private GameObject[,] grid = new GameObject[3, 3];
         //below array is used for re-arranging each individual cell to match the game logic
-        private string[] names = { "6", "3", "0", "7", "4", "1", "8", "5", "2" };
+        private readonly string[] names = { "6", "3", "0", "7", "4", "1", "8", "5", "2" };
 
         private Button createNewGameButton;
         private GameObject[] takenCells;

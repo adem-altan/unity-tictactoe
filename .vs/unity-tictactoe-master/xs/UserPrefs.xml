@@ -1,13 +1,16 @@
 ﻿<Properties StartupConfiguration="{C05EFAE7-D262-42B2-B123-F62836361A25}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CreationController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameEngine.cs">
     <Files>
-      <File FileName="Assets/Scripts/CreationController.cs" Line="95" Column="95" />
-      <File FileName="Assets/Scripts/GameController.cs" />
+      <File FileName="Assets/Scripts/CreationController.cs" Line="39" Column="40" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/TicTacToeCell.cs" Line="10" Column="26" />
+      <File FileName="Assets/Scripts/EnvironmentController.cs" Line="50" Column="1" />
+      <File FileName="Assets/Scripts/GameEngine.cs" Line="27" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c78021a3-246d-46c5-a887-030460a91108" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="6c441833-4590-4aa1-8fd2-a40161e86538" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

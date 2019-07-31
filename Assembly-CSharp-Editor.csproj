@@ -97,6 +97,9 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/ata/Projects/unity/unity-tictactoe-master/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="com.unity.multiplayer-hlapi.Editor">
+      <HintPath>/Users/ata/Projects/unity/unity-tictactoe-master/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>/Users/ata/Projects/unity/unity-tictactoe-master/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
@@ -112,20 +115,14 @@
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>/Users/ata/Projects/unity/unity-tictactoe-master/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>/Users/ata/Projects/unity/unity-tictactoe-master/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>/Users/ata/Projects/unity/unity-tictactoe-master/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/ata/Projects/unity/unity-tictactoe-master/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>/Users/ata/Projects/unity/unity-tictactoe-master/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    <Reference Include="com.unity.multiplayer-weaver.Editor">
+      <HintPath>/Users/ata/Projects/unity/unity-tictactoe-master/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
       <HintPath>/Users/ata/Projects/unity/unity-tictactoe-master/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>/Users/ata/Projects/unity/unity-tictactoe-master/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
       <HintPath>/Users/ata/Projects/unity/unity-tictactoe-master/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
@@ -133,14 +130,17 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>/Users/ata/Projects/unity/unity-tictactoe-master/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+      <HintPath>/Users/ata/Projects/unity/unity-tictactoe-master/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>/Users/ata/Projects/unity/unity-tictactoe-master/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
       <HintPath>/Users/ata/Projects/unity/unity-tictactoe-master/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
-    <Reference Include="com.unity.multiplayer-hlapi.Editor">
-      <HintPath>/Users/ata/Projects/unity/unity-tictactoe-master/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.multiplayer-weaver.Editor">
-      <HintPath>/Users/ata/Projects/unity/unity-tictactoe-master/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>/Users/ata/Projects/unity/unity-tictactoe-master/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Runtime">
       <HintPath>/Users/ata/Projects/unity/unity-tictactoe-master/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>

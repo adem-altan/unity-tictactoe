@@ -1,6 +1,7 @@
 ﻿
 namespace GoogleARCore
 {
+    using System;
     using System.Collections;
     using System.Collections.Generic;
     using UnityEngine;
@@ -20,7 +21,7 @@ namespace GoogleARCore
 
         private GameObject fireWorks;
 
-        private bool nextPlayer;
+        public bool nextPlayer;
 
         private readonly int[,] lines = { { 0, 1, 2 }, { 3, 4, 5 }, { 6, 7, 8 }, { 0, 3, 6 }, { 1, 4, 7 }, { 2, 5, 8 }, { 0, 4, 8 }, { 2, 4, 6 } };
         private string[] squares = new string[9];
@@ -59,7 +60,7 @@ namespace GoogleARCore
                         {
                             winnerMessage.text = "Draw";
                             ResetGame();
-                           
+
                         }
                         GameObject temp = raycastHit.transform.gameObject;
                         var indexToBeAccessed = System.Convert.ToInt32(temp.name);
@@ -77,7 +78,7 @@ namespace GoogleARCore
                                 winnerMessage.text = "Readifarian Wins";
                                 fireWorks.SetActive(true);
                                 ResetGame();
-                                
+
                             }
                         }
                         //second player
@@ -91,7 +92,7 @@ namespace GoogleARCore
                                 winnerMessage.text = "Kloudie Wins";
                                 fireWorks.SetActive(true);
                                 ResetGame();
-                               
+
                             }
                         }
 
